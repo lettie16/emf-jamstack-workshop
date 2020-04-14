@@ -4,6 +4,7 @@ const Index = () => {
   return (
     <>
       <h1>EMF CI/CD Workshop</h1>
+      <p>Lets change stuff!</p>>
       <p>This is the project for our workshop on Gatsby Cloud and GitHub Actions</p>
       <p>Use this project for the workshop</p>
     </>
