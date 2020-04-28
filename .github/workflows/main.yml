@@ -6,7 +6,7 @@ jobs:
   name: Run OS
   runs-on: ubuntu-latest
 
-  statergy:
+  strategy:
     matrix:
       node-version: [10.x]
   
