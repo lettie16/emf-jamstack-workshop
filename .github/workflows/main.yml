@@ -3,19 +3,19 @@ name: My first github actions
 on: push
 
 jobs:
-  name: Run OS
+  hello_world:
     runs-on: ubuntu-latest
 
-  strategy:
-    matrix:
-      node-version: [10.x]
-  
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v1
+    strategy:
+      matrix:
+        node-version: [10.x]
 
-    - name: Install Dependencies
-      run: npm install
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
 
-    - name: Run a one-line script that says hello world
-      run: echo Hello World
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run a one-line script that says hello world
+        run: echo Hello World
