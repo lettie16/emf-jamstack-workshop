@@ -1,0 +1,21 @@
+name: My first github actions
+
+on: push
+
+jobs:
+  name: Run OS
+  runs-on: ubuntu-latest
+
+  statergy:
+    matrix:
+      node-version: [10.x]
+  
+  steps:
+    - name: Checkout
+    uses: actions/checkout@v1
+
+    -name: Install Dependencies
+    run: npm install
+
+    -name: Run a one-line script that says hello world
+    run: echo Hello World
